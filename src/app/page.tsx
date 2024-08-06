@@ -1,4 +1,6 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -8,6 +10,16 @@ export default function Home() {
         Sauce is now the boss!
       </p>
       </div>
+      <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl">
+        Sauce up your <span className="text-blue-700">documents</span> right now!
+      </h1>
+      <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
+        Sauce is how you talk to the docs. Upload a file and get to work.
+      </p>
+      <Link href='/dashboard' target="_blank">
+      Get Started <ArrowRight className="ml-2 h-5 w-5"/>
+
+      </Link>
     </MaxWidthWrapper>
   );
 }
